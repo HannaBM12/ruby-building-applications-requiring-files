@@ -1,3 +1,4 @@
+require 'pry'
 class Garden
   attr_accessor :name
 
@@ -25,7 +26,9 @@ class Plant
   def self.all
     @@all
   end
+  binding.pry
 end
+
 
 lawn = Garden.new(name: 'Front Lawn')
 
